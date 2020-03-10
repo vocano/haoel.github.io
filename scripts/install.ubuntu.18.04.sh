@@ -96,7 +96,7 @@ create_cert() {
     echo -e "${COLOR_ERROR}注意：生成证书前,需要将域名指向一个有效的 IP,否则无法创建证书.${COLOR_NONE}"
     read -p "是否已经将域名指向了 IP？[Y/n]" has_record
 
-    if ! [[ "$has_record" = "Y" ]] ;then
+    if ! [[ "$has_record" = "n" ]] ;then
         echo "请操作完成后再继续."
         return
     fi
